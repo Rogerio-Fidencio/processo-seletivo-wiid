@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 export default function AccountTree() {
     const [accounts, setAccounts] = useState([])
     const [openSubMenu, SetOpenSubMenu] = useState()
-    const {setEmailListId, darkMode} = useAuth();
+    const {setEmailList, darkMode} = useAuth();
 
     
     useEffect(() => {
@@ -24,6 +24,23 @@ export default function AccountTree() {
         }
         getAccountTree();
     }, [])
+
+
+    async function fillEmailList(id) {
+        try {
+            const response = await fetch(`http://my-json-server.typicode.com/workinideas/vagafrontendteste/items/${id}`,
+                { method: 'GET' }
+            );
+
+            const data = await response.json();
+
+            const list = data.subMenuItems;
+
+            setEmailList(list)
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
 
 
@@ -49,7 +66,7 @@ export default function AccountTree() {
                                <span 
                                className='subMenu' 
                                key={subMenu.id}
-                               onClick={() => setEmailListId(subMenu.id)}
+                               onClick={() => fillEmailList(subMenu.id)}
                                >{subMenu.name}</span>
                             )
                         })}
