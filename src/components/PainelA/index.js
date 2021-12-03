@@ -7,12 +7,14 @@ export default function PainelA() {
     const {darkMode} = useAuth();
 
     return (
-        <div className="painel-a"
-        style={{background: darkMode ? '#000000' : '#ffffff'}}
-        >
-            <Profile />
+        <>
+            <div className="painel-a"
+            style={{background: darkMode ? '#000000' : '#ffffff'}}
+            >
+                <Profile />
 
-            <AccountTree />
-        </div>
+                <AccountTree />
+            </div>
+        </>
     )
 }
