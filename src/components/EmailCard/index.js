@@ -56,7 +56,7 @@ export default function EmailCard({email}) {
                         <h1 className='name'>{email.name}</h1>
                         <h2 className='subject'>{email.subject}</h2 >
                         <span className='generic-span'>
-                        <img className='wpp-icon' src={wppIcon} />
+                        <img className='wpp-icon' src={wppIcon} alt='' />
                         Caixa de entrada
                         </span>
                     </div>
