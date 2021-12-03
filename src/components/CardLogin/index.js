@@ -11,7 +11,7 @@ import useAuth from '../../hooks/useAuth';
 export default function CardLogin() {
     const [ localUser, setLocalUser] = useState();
     const [ localPassword, setLocalPassword] = useState();
-    const { logado, setLogado } = useAuth();
+    const { setLogado } = useAuth();
     const history = useHistory();
 
     function handleSubmit() {
