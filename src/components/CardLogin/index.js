@@ -49,15 +49,27 @@ export default function CardLogin() {
                 }} 
                 onChange={(e) => setLocalUser(e.target.value)}
                 value={localUser}
-                required id="outlined-basic" label="Login" variant="outlined" />
+                required 
+                id="text"
+                label="User"
+                type="text"
+                name="text"
+                autoFocus 
+                />
+
                 <TextField
                 sx={{width: '500px',
                 marginBottom: '50px'
                 }}  
                 onChange={(e) => setLocalPassword(e.target.value)}
                 value={localPassword}
-                alt=''
-                required id="outlined-basic" label="Senha" variant="outlined" />
+                required 
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password" 
+                />
                 
 
                 <Button 
