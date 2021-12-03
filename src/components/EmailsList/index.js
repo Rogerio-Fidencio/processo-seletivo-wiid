@@ -1,12 +1,10 @@
 import './style.css';
 import useAuth from '../../hooks/useAuth'
-import { useEffect } from 'react';
 import EmailCard from '../EmailCard';
 
 
 export default function EmailList() {
-    const { emailList, setEmailList,
-        emailListId,
+    const { emailList,
         selecteds, setSelecteds,
         archived, setArchived,
         darkMode, setDarkMode,
