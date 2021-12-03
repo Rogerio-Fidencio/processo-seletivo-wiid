@@ -15,9 +15,7 @@ export default function EmailList() {
 
     useEffect(() => {
         fillEmailList()
-    }, [emailListId]);
-
-    console.log(currentLanguage);
+    }, []);
 
 
     async function fillEmailList() {

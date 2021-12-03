@@ -57,6 +57,7 @@ export default function CardLogin() {
                 }}  
                 onChange={(e) => setLocalPassword(e.target.value)}
                 value={localPassword}
+                alt=''
                 required id="outlined-basic" label="Senha" variant="outlined" />
 
                 <Button 
@@ -66,7 +67,7 @@ export default function CardLogin() {
                 type='submit' variant="contained">LOGIN</Button>
             </Box>
 
-            <span className='register'>Não tem cadastro? <a className='register-link'> clique aqui!</a> </span>
+            <span className='register'>Não tem cadastro? <a href='' className='register-link'> clique aqui!</a> </span>
 
         </div>
     )
