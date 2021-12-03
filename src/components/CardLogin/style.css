@@ -1,0 +1,31 @@
+.card-login {
+    width: 700px;
+    height: 600px;
+    background: #ffffff88;
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    margin-bottom: 70px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.register {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.register-link {
+    text-decoration:underline;
+    color: rgb(52, 119, 128);
+
+    cursor: pointer;
+}

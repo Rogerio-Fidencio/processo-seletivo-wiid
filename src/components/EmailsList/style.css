@@ -1,0 +1,78 @@
+.email-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-list-header {
+    width: 100%;
+    height: 150px;
+}
+
+
+.top-bar {
+    height: 80px;
+    border-bottom: 1px solid #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar {
+    all: unset;
+
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.global-btn {
+    width: 200px;
+    margin: 0px 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.theme-btn {
+    width: 50px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.languages {
+    border-radius: 3px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.controllers {
+    height: 70px;
+    padding-left: 10px;
+    border-bottom: 1px solid #000000;
+
+    display: flex;
+    align-items: center;
+}
+
+.controllers button {
+    min-width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+}

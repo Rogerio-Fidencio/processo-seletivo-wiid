@@ -1,6 +1,6 @@
 const User = {
     userName: 'admin',
-    password: '12345'
+    password: 'admin'
 }
 
 export default User;
