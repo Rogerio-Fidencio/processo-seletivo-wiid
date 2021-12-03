@@ -9,22 +9,22 @@ export default function AccountTree() {
 
     
     useEffect(() => {
+        async function getAccountTree() {
+            try {
+                const response = await fetch('http://my-json-server.typicode.com/workinideas/vagafrontendteste/menus', 
+                   { method: 'GET'}
+                );
+        
+                const data = await response.json();
+        
+                setAccounts(data);
+            } catch (error) {
+                console.log(error);
+            }
+        }
         getAccountTree();
     }, [])
 
-    async function getAccountTree() {
-        try {
-            const response = await fetch('http://my-json-server.typicode.com/workinideas/vagafrontendteste/menus', 
-               { method: 'GET'}
-            );
-    
-            const data = await response.json();
-    
-            setAccounts(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
 
     return (

@@ -14,25 +14,25 @@ export default function EmailList() {
     } = useAuth();
 
     useEffect(() => {
-        fillEmailList()
-    }, []);
-
-
-    async function fillEmailList() {
-        try {
-            const response = await fetch(`http://my-json-server.typicode.com/workinideas/vagafrontendteste/items/${emailListId}`,
-                { method: 'GET' }
-            );
-
-            const data = await response.json();
-
-            const list = data.subMenuItems;
-
-            setEmailList(list)
-        } catch (error) {
-            console.log(error);
+        async function fillEmailList() {
+            try {
+                const response = await fetch(`http://my-json-server.typicode.com/workinideas/vagafrontendteste/items/${emailListId}`,
+                    { method: 'GET' }
+                );
+    
+                const data = await response.json();
+    
+                const list = data.subMenuItems;
+    
+                setEmailList(list)
+            } catch (error) {
+                console.log(error);
+            }
         }
-    }
+        fillEmailList()
+    }, [emailListId]);
+
+
 
 
     function EmailListHeader() {
