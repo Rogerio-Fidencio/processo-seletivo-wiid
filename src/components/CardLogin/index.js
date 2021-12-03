@@ -50,7 +50,6 @@ export default function CardLogin() {
                 onChange={(e) => setLocalUser(e.target.value)}
                 value={localUser}
                 required id="outlined-basic" label="Login" variant="outlined" />
-                
                 <TextField
                 sx={{width: '500px',
                 marginBottom: '50px'
@@ -59,6 +58,7 @@ export default function CardLogin() {
                 value={localPassword}
                 alt=''
                 required id="outlined-basic" label="Senha" variant="outlined" />
+                
 
                 <Button 
                 sx={{width: '350px',
@@ -67,7 +67,7 @@ export default function CardLogin() {
                 type='submit' variant="contained">LOGIN</Button>
             </Box>
 
-            <span className='register'>Não tem cadastro? <a href='' className='register-link'> clique aqui!</a> </span>
+            <span className='register'>Não tem cadastro? <p className='register-link'> clique aqui!</p> </span>
 
         </div>
     )

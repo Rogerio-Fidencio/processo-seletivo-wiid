@@ -15,7 +15,7 @@ export default function EmailList() {
 
     useEffect(() => {
         fillEmailList()
-    }, []);
+    });
 
 
     async function fillEmailList() {

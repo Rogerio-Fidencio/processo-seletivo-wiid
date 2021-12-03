@@ -21,6 +21,8 @@
 .register {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+
+    display: flex;
 }
 
 .register-link {
