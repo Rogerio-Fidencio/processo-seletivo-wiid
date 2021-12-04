@@ -16,7 +16,7 @@ export default function CardLogin() {
 
     function handleSubmit() {
 
-        if (localUser !== 'admin' || localPassword !== 'admin') {
+        if (localUser !== 'Admin' || localPassword !== 'Admin') {
             return
         }
 
