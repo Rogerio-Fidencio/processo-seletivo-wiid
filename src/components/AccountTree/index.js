@@ -11,7 +11,7 @@ export default function AccountTree() {
     useEffect(() => {
         async function getAccountTree() {
             try {
-                const response = await fetch('http://my-json-server.typicode.com/workinideas/vagafrontendteste/menus', 
+                const response = await fetch('https://my-json-server.typicode.com/workinideas/vagafrontendteste/menus', 
                    { method: 'GET'}
                 );
         
@@ -28,7 +28,7 @@ export default function AccountTree() {
 
     async function fillEmailList(id) {
         try {
-            const response = await fetch(`http://my-json-server.typicode.com/workinideas/vagafrontendteste/items/${id}`,
+            const response = await fetch(`https://my-json-server.typicode.com/workinideas/vagafrontendteste/items/${id}`,
                 { method: 'GET' }
             );
 
